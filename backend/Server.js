@@ -4,7 +4,7 @@ const { MongoClient } = require("mongodb");
 const app = express();
 app.use(express.json());
 app.use(cors());
-const url = "mongodb+srv://snehalborlikar1_db_user:shailendra@shailendracollege.lnbci6a.mongodb.net/?appName=shailendracollege";
+const url="mongodb+srv://<username>:<password>@cluster0.xxxxxx.mongodb.net/?retryWrites=true&w=majority"
 const client = new MongoClient(url);
 async function insertData()
  {
