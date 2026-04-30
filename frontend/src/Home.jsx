@@ -11,7 +11,7 @@ export default function Home() {
   const submitform = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:3001/Home", {
+    fetch("https://your-backend.onrender.com/insert", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
